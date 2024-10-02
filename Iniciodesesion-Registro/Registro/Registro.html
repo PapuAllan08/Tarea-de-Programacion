@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Registro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <meta name="author" content="MoisésSegura">
+    <title>Registro</title>
+</head>
+<body>
+    <div id="ContainerRegistro">
+        <img src="../../Imagenes/Pantalla Inicial/Iniciodesesion.png" alt="">
+            <form action="" method="post" id="Informacionderegistro">
+                <span >
+                    <p class="Anuncio" id="Anuncionombredeusuario"></p>
+                    <input type="text" id="Nombredeusuario" placeholder="Nombre" onfocus="quitarAnuncios()">
+                </span>
+                <span>
+                    <p class="Anuncio" id="Anuncioapellido1deusuario"></p>
+                    <input type="text" id="Apellido1deusuario" placeholder="Apellido 1" onfocus="quitarAnuncios()">
+                </span>
+                <span>
+                    <p class="Anuncio" id="Anuncioapellido2deusuario"></p>
+                    <input type="text" id="Apellido2deusuario" placeholder="Apellido 2" onfocus="quitarAnuncios()">
+                </span>
+                <span >
+                    <p class="Anuncio" id="Anuncioceduladeusuario"></p>
+                    <input type="text" id="Ceduladeusuario" placeholder="Número de cédula:" onfocus="quitarAnuncios()">
+                </span>
+                <span>
+                    <p class="Anuncio" id="Anunciocorreodeusuario"></p>
+                    <input type="email" id="Correodeusuario" placeholder="Correo Electrónico" onfocus="quitarAnuncios()">
+                </span>
+                <span>
+                    <p class="Anuncio" id="Anuncionumerotelefonodeusuario"></p>
+                    <input type="text" id="Numerotelefonodeusuario" placeholder="Número de Teléfono" onfocus="quitarAnuncios()">
+                </span>
+                <span>
+                    <p class="Anuncio" id="Anunciocontraseña"></p>
+                    <input type="password" id="Contraseñadeusuario" placeholder="Contraseña" onfocus="quitarAnuncios()">
+                </span>
+                <img src="../../ImagenesPrincipales/LogoSamsung.png" alt="">
+            </form>
+            <button id="Enviardatos"> LISTO </button>
+        <p>
+            ¿Ya iniciaste sesión? <a href="../IniciodeSesión/IniciodeSesión.html">Inicio de Sesión</a>
+        </p>
+    </div>
+    <div id="Fondo">
+        <video src="../FondoIniciodeSesión.mp4" autoplay loop width="100%"></video>
+    </div>
+    <script src="Registro.js"></script>
+</body>
+</html>

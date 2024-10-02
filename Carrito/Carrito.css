@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerCarrito {
+    width: 50vw;
+    height: 43vw;
+    display: block;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0vw 3vw 0vw 0vw;
+}
+
+.containerCarrito > h1 img{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+}
+
+#Encabezado{
+    height: 2vw;
+    display: flex;
+    margin: 2vw 0vw 0vw 0vw;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+#Encabezado h1{
+    font-size: 1vw;
+    position: absolute;
+    margin-left: 1vw;
+}
+
+#Encabezado h2{
+    font-size: 1vw;
+    position: absolute;
+    margin-left: 24vw;
+}
+
+#Encabezado h3{
+    font-size: 1vw;
+    position: absolute;
+    margin-left: 34vw;
+}
+
+#Carrito{
+    margin: 0vw 0vw 1.5vw 0vw;
+    overflow: scroll;
+    padding: 1vw;
+    height: 25vw;
+}
+
+#Carrito div{
+    padding: 0.5vw;
+    align-content: center;
+    margin-bottom: 1.5vw;
+    border-bottom: 1px #bcbcbc solid;
+    width: 44vw;
+    gap: 0.5vw;
+    display: flex;
+}
+
+#Carrito img{
+    width: 2vw;
+    height: 2vw;
+}
+
+#Carrito h1{
+    font-size: 1.5vw;
+    width: 22vw;
+    float: right;
+}
+
+#Carrito input{
+    font-size: 1.1vw;
+    text-align: center;
+    border: none;
+    margin-left: 2vw;
+    width: 3vw;
+}
+
+#Carrito p{
+    text-align: end;
+    width: 9vw;
+    margin: 0.5vw 0vw 0vw 2vw;
+}
+
+.QuitarProducto{
+    cursor: pointer;
+    width: 1vw;
+    height: 1vw;
+    opacity: 40%;
+    margin: 0vw 0vw 0vw 3vw;
+}
+
+
+
+.Total{
+    margin-top: 3vw;
+    border: none;
+}
+
+.Total span{
+    display: flex;
+}
+
+.Total h1{
+    font-size: 1.3vw;
+    margin-bottom: 0.6vw;
+}
+
+.Total p{
+    position: absolute;
+    margin: 0vw 0vw 0vw 30vw;
+    text-align: end;
+    width: 9vw;
+}
+
+#Tarjeta{
+    margin: 0vw 0vw 38vw 74vw;
+    position: absolute;
+    border: none;
+    width: 15vw;
+    height: 10vw;
+}
+
+#a{
+    position: absolute  ;
+    margin: 0vw 92vw 42vw 0vw;
+}
+
+#ContinuarComprando {
+    filter: invert(100%);
+    width: 4vw;
+    position: absolute;
+    margin: 0vw 90vw 40vw 0vw;
+    rotate: 180deg;
+}
+
+.InformacionDePago {
+    margin-top: 1vw;
+    width: 28%;
+    height: 43vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.InformacionDePago h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2vw;
+}
+
+.InformacionDePago span{
+    margin: 1vw 0vw 2vw 0vw;
+    display: flex;
+    width: 22Vw;
+    height: 4vw;
+}
+
+.InformacionDePago img{
+    padding: 1vw 2vw 1vw 2vw;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin-left: 2.5vw;
+    width: 10vw;
+    height: 5vw;
+    border: none;
+}
+
+form label {
+    display: block;
+    margin-top: 1vw;
+    color: rgb(255, 255, 255);
+
+}
+
+form p{
+    color: rgb(255, 0, 0);
+    height: 1vw;
+    text-align: end;
+    font-size: 0.9vw;
+}
+
+input::placeholder{
+    color: rgb(180, 180, 180);
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="password"]::-ms-reveal{
+    filter: invert(100%);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+form input {
+    font-size: 1vw;
+    background-color: transparent;
+    color: rgb(180, 180, 180);
+    width: 100%;
+    height: 2.5vw;
+    padding: 1vw;
+    margin: 0.1vw 0vw 0vw 0vw;
+    border-radius: 5px;
+    border: 1px rgb(117, 117, 117) solid;
+}
+
+#Revisar {
+    font-size: 1.3vw;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    width: 100%;
+    padding: 1vw;
+    background-color: #5069e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#PopUpDetalleDeCompra{
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 2vw;
+    height: 30vw;
+    width: 40vw;
+    background-color: white;
+    color: black;
+    margin: 15vw 35vw;
+    z-index: 1;
+    position: fixed;
+    box-shadow: 0vw 0vw 50vw 0vw black;
+    display: none;
+    animation-name: AparicionPopUP;
+    animation-duration: 200ms;
+}
+
+@keyframes AparicionPopUP {
+    0%{
+        transform: translateY(3vw);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: translateY(0vw);
+        opacity: 100%;
+    }
+}
+
+#PopUpDetalleDeCompra > h1{
+    margin-bottom: 2vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+#SpanTotalaPagar{
+    margin: 2vw auto 1vw auto;
+    display: flex;
+    width: 35vw;
+}
+
+#SpanTotalaPagar h2{
+    font-size: 1.4vw;
+}
+
+#SpanTotalaPagar p{
+    font-size: 1.2vw;
+    margin-left: 16vw;
+}
+
+
+#PopUpDetalleDeCompra button{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    margin: 0vw 2vw 2vw 2vw;
+    height: 3vw;
+    width: 16vw;
+}
+
+#CancelarCompra{
+    background-color: rgb(128, 0, 0);
+}
+
+#ConfirmarCompra{
+    background-color: rgb(9, 88, 0);
+}
+
+#DeAcuerdo{
+    background-color: rgb(29, 29, 29);
+}
+
+#DescripcionDeLaCompra img{
+    width: 17vw;
+    height: 16vw;
+}
+
+
+#DetalleDeCompra{
+    margin: auto;
+    overflow: scroll;
+    width: 35vw;
+    height: 14vw;
+}
+
+#DetalleDeCompra img{
+    width: 2vw;
+    height: 2vw;
+}
+
+#DetalleDeCompra div{
+    padding: 0.5vw;
+    border-bottom: 1px #bcbcbc solid;
+    width:33vw;
+    gap: 0.5vw;
+    display: flex;
+}
+
+#DetalleDeCompra h1{
+    font-size: 1.2vw;
+    width: 15vw;
+    float: right;
+}
+
+#DetalleDeCompra input{
+    font-size: 1.1vw;
+    text-align: center;
+    border: none;
+    margin-left: 2vw;
+    width: 3vw;
+}
+
+#DetalleDeCompra p{
+    text-align: end;
+    width: 7vw;
+    margin: 0vw 0vw 0vw 0vw;
+}
+

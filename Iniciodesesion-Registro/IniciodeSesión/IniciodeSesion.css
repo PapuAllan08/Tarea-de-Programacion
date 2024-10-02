@@ -1,0 +1,106 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+
+}
+
+#Fondo{
+    border: none;
+    overflow: hidden;
+    height: 115%;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+#Container{
+    margin-top: 5.7vw;
+    padding: 1vw 0vw 5vw 0vw;
+    backdrop-filter: blur(7px);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.4);
+    border-radius: 5vw;
+    width: 35vw;
+    height: 29vw;
+    display: grid;
+
+    position: relative;
+    place-items: center;
+    z-index: 1;
+}
+
+#Titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    margin-bottom: 0vw;
+}
+
+#Informaciondeinicio{
+
+    width: 23.5vw;
+}
+
+input{
+    margin-bottom: 0.5vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+    width: 23vw;
+    height: 3vw;
+    background: transparent;
+    border: none;
+    border-bottom: solid white 0.2vw;
+    color: white;
+    grid-column: 1fr;
+    
+}
+
+input::-ms-reveal{
+    filter: invert(100%);
+}
+
+input::placeholder{
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+
+.Anuncio{
+    width: 20vw;
+    height: 2vh;
+    color: turquoise;
+    margin-bottom: 0.5vw;
+}
+
+#Enviardatos{
+    background-color: aqua;
+    border: none;
+    border-radius: 1vw;
+    width: 15vw;
+    height: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1.7vw;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(17, 17, 17);
+}
+
+a{
+    color: white;
+}
+
+#Container > a{  
+    font-size: 1.1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1.1vw;
+    color: white;
+}

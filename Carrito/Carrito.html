@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+        <link rel="stylesheet" href="Carrito.css">
+    </head>
+    <body>
+        <a href="../Principal/Principal.html#Galeria" id="a">
+            <img src="../ImagenesPrincipales/FlechaRegreso.png" alt="" id="ContinuarComprando">
+        </a>
+        <img src="MetodosDePago/Tarjeta.webp" alt="Tarjeta" id="Tarjeta">
+        <div class="containerCarrito">
+            <h1>
+                <img src="../ImagenesPrincipales/Añadiralcarrito.png" alt="">
+                Carrito de Compras</h1>
+            <div id="Encabezado"><h1>Producto</h1><h2>Cantidad</h2><h3>Precio</h3></div>
+        <div id="Carrito"></div>
+        <div class="Total">
+            <span><h1>Subtotal:</h1><p id="Subtotal"></p></span>
+            <span><h1>Costo de Envio:</h1><p id="CostodeEnvio"></p></span>
+            <span><h1>Total:</h1><p id="Total"></p></span>
+        </div>
+    </div>
+    <div class="InformacionDePago">
+        <h1>Información de Pago</h1>
+        <form>
+            Métodos De Pago:
+            <p id="ElegirMetodoDePago"></p>
+                <span>
+                <img src="MetodosDePago/Visa.png" alt="Visa" id="Visa">
+                <img src="MetodosDePago/MasterCard.png" alt="MasterCard" id="MasterCard">
+                </span>
+
+            <label>
+                <p class="CampoObligatorio"></p>
+                Nombre en Tarjeta:
+                <input type="text" placeholder="María Ruiz" id="NombreEnTarjeta">
+            </label>
+            <label>
+                <p class="CampoObligatorio"></p>
+                Número de Tarjeta:
+                <input type="password" placeholder="**** **** **** 3271" id="NúmeroDeTarjeta">
+            </label>
+            <label>
+                <p class="CampoObligatorio"></p>
+                Fecha de Expiración:
+                <input type="date" id="fecha" id="FechaDeExpiraciónTarjeta">
+            </label>
+            <label>
+                <p class="CampoObligatorio"></p>
+                CVV:
+                <input type="password" placeholder="***" id="CVV">
+            </label>
+            <button id="Revisar">Comprar</button>
+        </form>
+    </div>
+
+    <div id="PopUpDetalleDeCompra">
+        <h1 id="MensajeDeCompra"></h1>
+        <span id="DescripcionDeLaCompra"></span>
+        <span id="SpanTotalaPagar"></span>
+        <span id="Botones"></span>
+    </div>
+
+    <script src="../Productos.js"></script>
+    <script src="AñadirAlCarrito.js"></script>
+    <script src="Carrito.js"></script>
+    <script src="PáginaIndividual/ProductoIndividual.js"></script>
+</body>
+</html>

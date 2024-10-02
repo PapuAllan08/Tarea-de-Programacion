@@ -1,0 +1,111 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+
+}
+
+#Fondo{
+    border: none;
+    overflow: hidden;
+    height: 105%;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+img{
+    margin-top: 1vw;
+    z-index: 1;
+    width: 5vw;
+    height: 5vw;
+}
+
+#ContainerRegistro{
+    margin: 3vw 0vw 3vw 0vw;
+    padding: 0.2vw 0vw 10vw 0vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 30px rgba(237, 237, 237, 0.5);
+    border-radius: 5vw;
+    width: 60vw;
+    height: 29.3vw;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
+#Informacionderegistro{
+    padding: 0vh 1vw 0vh 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 50vw;
+    height: 24vw;
+}
+
+input{
+    padding-left: 1vw;
+    font-size: 1vw;
+    width: 20vw;
+    height: 3vw;
+    background: transparent;
+    border: solid white 0.2vw;
+    border-radius: 10px;
+    color: white;
+    margin-top: 0.5vw;
+}
+
+span{
+
+    height: 6vw;
+}
+
+input::placeholder{
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+
+.Anuncio{
+    margin: 0;
+    width: 12vw;
+    height: 2vh;
+    color: turquoise;
+
+}
+
+#Informacionderegistro > img{
+    position: relative;
+    margin-top: 1vw;
+    margin-left: 1VW;
+    width: 20vw;
+}
+
+#Enviardatos{
+    background-color: aqua;
+    border: none;
+    border-radius: 1vw;
+    width: 15vw;
+    height: 3vw;
+    margin: 1vw 0vw 1vw 0vw;
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 0.2vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    color: rgb(22, 22, 22);
+}
+
+a{  
+    font-size: 1.2vw;
+    color: white;
+    cursor: pointer;
+}
+
+#ContainerRegistro > p{
+    font-size: 1.2vw;
+    color: white;
+}
+
